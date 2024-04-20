@@ -1,0 +1,85 @@
+.content{
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.content .left{
+  width:50%;
+  text-align: center;
+  padding: 12% 12%;
+  font-size: 18px;
+}
+
+.content .right{
+  width:50%;
+  padding-top: 6%;
+  padding-right: 5%;
+}
+
+.content button{
+  padding: 10px 10px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  box-shadow: -5px 5px grey;
+  transition: 0.6s;
+}
+
+.content button:hover{
+  background-color: #F0EAD6;
+  color: black;
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  background-color: #F0EAD6;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin-bottom: 5%;
+}
+
+.banner .card{
+  width: 25%;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.banner img{
+  width: 20%;
+  height: auto;
+
+}
+
+.footer {
+  display:flex;
+  justify-content:center;
+
+}
+
+.footer .socials{
+  width: 15%;
+  text-align: left;
+  margin-top: 5%;
+}
+
+.footer .logo{
+  width: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .logo img{
+  width: 30%;
+}
+
+
+.footer .about{
+    width: 15%;
+    text-align: right;
+    margin-top: 5%;
+}
