@@ -24,11 +24,13 @@
   border-radius: 20px;
   box-shadow: -5px 5px grey;
   transition: 0.6s;
+  width:20%
 }
 
 .content button:hover{
   background-color: #F0EAD6;
   color: black;
+  width: 25%;
 }
 
 .banner{

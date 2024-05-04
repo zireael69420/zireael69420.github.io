@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,7 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/about.css">
+        <link rel="stylesheet" href="./styles/meditation.css">
         <link rel="stylesheet" href="./styles/navbar.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +22,181 @@
             <a href="about.html">About</a>
             <a href="help.html">Help</a>
         </div>
+
         
-        <script src="" async defer></script>
+        <div class="links">
+                <a href="articles.html"> Articles</a> > <a id="main">Meditation</a>
+        </div>
+
+
+        <div class="content">
+
+            <div class="left">
+                <h1>Meditation</h1>
+                <div class="list">
+                    <a id="first">What is meditation?</a><br><br>
+                    <a id="second">Meditation for beginners</a><br><br>
+                    <a id="third">Benefits of meditation</a><br><br>
+                    <a id="fourth">Meditation techniques</a><br><br>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="./images/meditation.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="content">
+
+            <div class="left">
+                <h1>What is meditation?</h1>
+                <div>   
+                    Meditation is a practice that has been around for thousands of years, but what exactly is it? At its core, meditation is a technique that involves focusing your mind and eliminating the stream of jumbled thoughts that may be crowding your head and causing stress. It's about training your mind to be more present and aware. Meditation has been shown to have numerous benefits for both the mind and body, including reducing stress, improving focus and concentration, and promoting a sense of calm and well-being. So why not give it a try? All you need is a few minutes and an open mind, and you may be surprised at the difference it can make in your life.
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="./images/what_is_meditation.png" alt="">
+            </div>
+        </div>
+
+
+
+
+        <div class="content">
+
+            <div class="left">
+                <img src="./images/meditation_techniques.png" alt="">
+            </div>
+
+            <div class="right">
+                <h1>Meditation for beginners</h1>
+                Meditation can seem intimidating if you've never tried it before, but it's actually quite simple – and incredibly rewarding. Here's a beginner's guide to help you get started.
+
+<br>Choose a quiet, comfortable spot where you won't be interrupted. It could be a corner of your bedroom, a cozy nook in your living room, or even a park bench outdoors.
+<br>If you're new to meditation, start with just a few minutes at a time. Set a timer for 5 or 10 minutes and gradually increase the length of your sessions as you become more comfortable with the practice.
+<br>Sit or lie down in a comfortable position. You can sit cross-legged on the floor, on a cushion, or in a chair – whatever feels best for you. Make sure your back is straight but not rigid, and your hands are resting comfortably in your lap or on your knees.
+<br>Close your eyes and take a few deep breaths, feeling the air fill your lungs and then release slowly. Now, let your breath return to its natural rhythm and focus your attention on the sensation of each inhale and exhale. Instead of trying to stop your thoughts, simply acknowledge them and let them go, returning your attention to your breath.
+
+            </div>
+
+            
+        </div>
+
+
+
+        <div class="content">
+
+            <div class="left">
+                <h1>Benefits of meditation</h1>
+                <div>
+                    One of the most well-known benefits of meditation is its ability to reduce stress. By focusing your mind and calming your nervous system, meditation can help you feel more relaxed and at ease, even in the midst of life's challenges.
+                    <br><br>Meditation can help you develop a greater sense of self-awareness and emotional resilience, making it easier to navigate difficult emotions and respond to challenging situations with calm and clarity.
+                    <br><br>Meditation is a simple yet powerful tool for reducing stress, improving focus, and cultivating a greater sense of well-being. So why not give it a try? With just a few minutes each day, you can begin to experience the many benefits that meditation has to offer.
+                    
+                
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="./images/benefits_of_meditation.png" alt="">
+            </div>
+        </div>
+
+
+
+
+        <div class="content">
+
+            <div class="left">
+                <img src="./images/meditation_techniques.png" alt="">
+            </div>
+
+            <div class="right">
+                <h1>How to reduce anxiety</h1>
+                <div>
+                    Meditation doesn't have to be complicated – in fact, there are many simple techniques that anyone can try, even if you're brand new to the practice. Here are a few easy meditation techniques to get you started.
+<br>Choose a word or phrase that holds special meaning for you – it could be something like "peace," "love," or "let go." Close your eyes and repeat the mantra silently to yourself with each breath, allowing it to fill your mind and bring you a sense of calm and focus.
+<br>There’s also something called “Walking Meditation”. Instead of sitting still, try taking a walk outdoors and practicing mindfulness as you go. Pay attention to the sensations of your feet touching the ground, the movement of your body, and the sights and sounds around you. Whenever your mind starts to wander, gently bring your focus back to the present moment.
+<br>Remember, there's no right or wrong way to meditate – the most important thing is to find a technique that works for you and makes you feel calm and centered. Experiment with different methods until you find one that resonates with you, and don't be afraid to mix and match techniques to suit your needs. With a little practice and patience, you'll soon discover the many benefits that meditation has to offer.
+
+                </div>
+            </div>
+
+            
+        </div>
+
+
+        
+
+
+        <script async defer>
+
+
+            var first = document.getElementById('first');
+            var second = document.getElementById('second');
+            var third = document.getElementById('third');
+            var fourth = document.getElementById('fourth');
+            var linksDiv = document.querySelector('.links');
+            document.querySelectorAll('.content')[0].classList.add('visible');
+
+            first.addEventListener('click', function(event){
+                console.log("clicked first");
+                linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Meditation</a> > <a>How To Relieve Stress</a>';
+                
+                var mentalLink = document.getElementById('main');
+                mentalLink.addEventListener('click', function(event) {
+                    document.querySelectorAll('.content')[0].classList.add('visible');
+                    document.querySelectorAll('.content')[1].classList.remove('visible');
+                    linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Meditation</a>';
+                });
+                document.querySelectorAll('.content')[0].classList.remove('visible');
+                document.querySelectorAll('.content')[1].classList.add('visible');
+            })
+
+            second.addEventListener('click', function(event){
+                linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Meditation</a> > <a>Meditation For Stress</a>';
+                
+                var mentalLink = document.getElementById('main');
+                mentalLink.addEventListener('click', function(event) {
+                    document.querySelectorAll('.content')[0].classList.add('visible');
+                    document.querySelectorAll('.content')[2].classList.remove('visible');
+                    linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Meditation</a>';
+                });
+                document.querySelectorAll('.content')[0].classList.remove('visible');
+                document.querySelectorAll('.content')[2].classList.add('visible');
+            })
+
+            third.addEventListener('click', function(event){
+                linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Meditation</a> > <a>How To Relax</a>';
+                
+                var mentalLink = document.getElementById('main');
+                mentalLink.addEventListener('click', function(event) {
+                    document.querySelectorAll('.content')[0].classList.add('visible');
+                    document.querySelectorAll('.content')[3].classList.remove('visible');
+                    linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Meditation</a>';
+                });
+                document.querySelectorAll('.content')[0].classList.remove('visible');
+                document.querySelectorAll('.content')[3].classList.add('visible');
+            })
+
+            fourth.addEventListener('click', function(event){
+                linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Meditation</a> > <a>How To Reduce Anxiety</a>';
+                
+                var mentalLink = document.getElementById('main');
+                mentalLink.addEventListener('click', function(event) {
+                    document.querySelectorAll('.content')[0].classList.add('visible');
+                    document.querySelectorAll('.content')[4].classList.remove('visible');
+                    linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Meditation</a>';
+                });
+                document.querySelectorAll('.content')[0].classList.remove('visible');
+                document.querySelectorAll('.content')[4].classList.add('visible');
+            })
+
+
+
+        </script>
     </body>
 </html>

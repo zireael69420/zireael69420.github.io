@@ -6,7 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/about.css">
+        <link rel="stylesheet" href="./styles/mentalhealth.css">
         <link rel="stylesheet" href="./styles/navbar.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,175 @@
             <a href="about.html">About</a>
             <a href="help.html">Help</a>
         </div>
+
         
-        <script src="" async defer></script>
+        <div class="links">
+                <a href="articles.html"> Articles</a> > <a id="main">Mental Health</a>
+        </div>
+
+
+        <div class="content">
+
+            <div class="left">
+                <h1>Mental Health</h1>
+                <div class="list">
+                    <a id="first">How To Relieve Stress</a><br><br>
+                    <a id="second">Meditation For Stress</a><br><br>
+                    <a id="third">How To Relax</a><br><br>
+                    <a id="fourth">How To Reduce Anxiety</a><br><br>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="./images/mentalhealth.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="content">
+
+            <div class="left">
+                <h1>How to relieve stress</h1>
+                <div>   
+                    In today's busy world, stress is everywhere. But there are easy ways to feel better!<br><br>
+When stress hits, try taking deep breaths. It calms you down fast. Stretching also helps release tension in your muscles, making you feel more relaxed. Eat healthy foods! Instead of junk food, choose fruits, veggies, and whole grains. They give you energy and make you feel good. Exercise is also great for reducing stress. It releases happy chemicals in your brain and helps you feel more calm. Getting enough sleep is super important. It helps your body recover and keeps you feeling good. These simple tips can make a big difference in how you feel every day. Try them out and see what works best for you!
+
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="./images/how_to_relieve_stress.png" alt="">
+            </div>
+        </div>
+
+
+
+
+        <div class="content">
+
+            <div class="left">
+                <img src="./images/meditation_for_stress.png" alt="">
+            </div>
+
+            <div class="right">
+                <h1>Meditation for stress</h1>
+                Feeling stressed? Meditation might be the answer. It's an easy way to calm your mind and relax your body.
+<br>Sit or lie down in a quiet place where you won't be disturbed. Close your eyes if you like. Take slow, deep breaths. Feel your chest rise and fall with each breath. Notice how the air feels as it enters and leaves your body. Thoughts might pop into your head. That's okay. Just let them come and go without getting caught up in them. Focus back on your breath. Pay attention to the present moment. Notice any sensations in your body or sounds around you. Stay here, in the now. If your mind wanders, don't worry. It's normal. Just gently bring your focus back to your breath.
+<br>Even just a few minutes of meditation each day can make a big difference in how you feel. So next time you're feeling stressed, give meditation a try. It's simple, it's free, and it might be just what you need to find some peace of mind.
+
+            </div>
+
+            
+        </div>
+
+
+
+        <div class="content">
+
+            <div class="left">
+                <h1>How to relax</h1>
+                <div>
+                In today's stressful world, finding time to relax is essential for our well-being. Here are some simple ways to unwind and de-stress. Whenever you feel tense or overwhelmed, take a few moments to focus on your breath. Inhale deeply through your nose, hold for a moment, and then exhale slowly through your mouth. Repeat this several times to calm your mind and body. Try putting on some calming music that you enjoy and let yourself get lost in the melodies. Music has a powerful effect on our mood and can help us unwind after a long day. Find activities that allow you to be fully present and focused. Mindful activities help quiet the mind and bring a sense of peace and contentment. Set aside some time each day to disconnect from screens and digital devices. Instead, read a book, spend time with loved ones, or simply enjoy some quiet time alone. 
+Remember, relaxation looks different for everyone, so find what works best for you and make it a priority in your daily routine. By taking time to unwind and recharge, you'll feel more refreshed, focused, and ready to tackle whatever comes your way.
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="./images/how_to_relax.png" alt="">
+            </div>
+        </div>
+
+
+
+
+        <div class="content">
+
+            <div class="left">
+                <img src="./images/how_to_reduce_anxiety.png" alt="">
+            </div>
+
+            <div class="right">
+                <h1>How to reduce anxiety</h1>
+                <div>
+                    Anxiety can feel overwhelming, but there are easy ways to manage it and feel better. Here are some simple strategies. When anxious thoughts pop up, challenge them. Ask yourself if they're really true or if there's a more positive way to look at the situation. Replace negative thoughts with realistic and positive ones. Physical activity is a great way to reduce anxiety. Whether it's going for a walk, doing yoga, or dancing around your room, moving your body helps release tension and boost your mood.  Make sure you're getting enough rest. Stick to a regular sleep schedule and create a relaxing bedtime routine to help you unwind. Mindfulness techniques, such as meditation and deep breathing, can help you stay grounded and reduce anxiety. Focus on the present moment and pay attention to your thoughts and feelings without judgment.
+Don't be afraid to reach out to friends, family, or a therapist for support. Talking about your feelings can help you feel less alone and more understood. Remember, managing anxiety takes time and practice, so be patient with yourself. By incorporating these simple strategies into your daily routine, you can reduce anxiety and feel more in control of your life.
+
+                </div>
+            </div>
+
+            
+        </div>
+
+
+        
+
+
+        <script async defer>
+
+
+            var first = document.getElementById('first');
+            var second = document.getElementById('second');
+            var third = document.getElementById('third');
+            var fourth = document.getElementById('fourth');
+            var linksDiv = document.querySelector('.links');
+            document.querySelectorAll('.content')[0].classList.add('visible');
+
+            first.addEventListener('click', function(event){
+                console.log("clicked first");
+                linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Mental Health</a> > <a>How To Relieve Stress</a>';
+                
+                var mentalLink = document.getElementById('main');
+                mentalLink.addEventListener('click', function(event) {
+                    document.querySelectorAll('.content')[0].classList.add('visible');
+                    document.querySelectorAll('.content')[1].classList.remove('visible');
+                    linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Mental Health</a>';
+                });
+                document.querySelectorAll('.content')[0].classList.remove('visible');
+                document.querySelectorAll('.content')[1].classList.add('visible');
+            })
+
+            second.addEventListener('click', function(event){
+                linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Mental Health</a> > <a>Meditation For Stress</a>';
+                
+                var mentalLink = document.getElementById('main');
+                mentalLink.addEventListener('click', function(event) {
+                    document.querySelectorAll('.content')[0].classList.add('visible');
+                    document.querySelectorAll('.content')[2].classList.remove('visible');
+                    linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Mental Health</a>';
+                });
+                document.querySelectorAll('.content')[0].classList.remove('visible');
+                document.querySelectorAll('.content')[2].classList.add('visible');
+            })
+
+            third.addEventListener('click', function(event){
+                linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Mental Health</a> > <a>How To Relax</a>';
+                
+                var mentalLink = document.getElementById('main');
+                mentalLink.addEventListener('click', function(event) {
+                    document.querySelectorAll('.content')[0].classList.add('visible');
+                    document.querySelectorAll('.content')[3].classList.remove('visible');
+                    linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Mental Health</a>';
+                });
+                document.querySelectorAll('.content')[0].classList.remove('visible');
+                document.querySelectorAll('.content')[3].classList.add('visible');
+            })
+
+            fourth.addEventListener('click', function(event){
+                linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Mental Health</a> > <a>How To Reduce Anxiety</a>';
+                
+                var mentalLink = document.getElementById('main');
+                mentalLink.addEventListener('click', function(event) {
+                    document.querySelectorAll('.content')[0].classList.add('visible');
+                    document.querySelectorAll('.content')[4].classList.remove('visible');
+                    linksDiv.innerHTML = '<a href="articles.html">Articles</a> > <a id="main">Mental Health</a>';
+                });
+                document.querySelectorAll('.content')[0].classList.remove('visible');
+                document.querySelectorAll('.content')[4].classList.add('visible');
+            })
+
+
+
+        </script>
     </body>
 </html>
