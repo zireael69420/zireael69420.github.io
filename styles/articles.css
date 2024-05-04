@@ -1,0 +1,26 @@
+.content{
+    font-size: 1.2vh;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.content h1{
+    font-size: 4vh;
+}
+.card-list{
+    display: flex;
+}
+
+.card{
+  width: 30%;
+  align-items: center;
+  text-align: center;
+}
+
+.card button{
+    background-color: #F0EAD6;
+    font-size: 3vh;
+    padding: 3% 5% 3% 5%;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
