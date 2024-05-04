@@ -1,0 +1,16 @@
+.upper-content{
+    display: flex;
+}
+
+.upper-content .left{
+    padding: 5%;
+    width: 50%;
+    font-size: 1.4em;
+    text-align: justify;
+    
+}
+
+.upper-content .right{
+    padding: 5%;
+    width: 50%;
+}
