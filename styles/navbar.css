@@ -56,3 +56,19 @@ body{
   background-color: black;
   
 }
+
+@media screen and (max-width: 700px) {
+  .topnav{
+    font-size: 1vh;
+  }
+
+  .topnav a{
+    font-size: 1.2vh;
+    padding: 5%;
+  }
+
+  .topnav img{
+    height: 35px;
+  }
+}
+
