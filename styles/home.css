@@ -1,13 +1,13 @@
 .content{
   display: flex;
   margin-bottom: 5%;
+  font-size: 1.2vw;
 }
 
 .content .left{
   width:50%;
   text-align: center;
   padding: 12% 12%;
-  font-size: 18px;
 }
 
 .content .right{
@@ -18,6 +18,7 @@
 
 .content button{
   padding: 10px 10px;
+  font-size: 14px;
   margin-top: 20px;
   background-color: black;
   color: white;
@@ -45,7 +46,6 @@
 .banner .card{
   width: 25%;
   align-items: center;
-  font-size: 16px;
   text-align: center;
   margin-left: 3%;
   margin-right: 3%;
@@ -84,4 +84,46 @@
     width: 15%;
     text-align: right;
     margin-top: 5%;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .content{
+    display: block;
+    font-size: 2vh;
+    padding-left: 0%;
+  }
+  .content .left{
+    width: 80%;
+  }
+
+  .content .right{
+    width: 100%;
+    padding: 0%;
+  }
+  .content .right img{
+    width: 100%;
+  }
+
+  .content button{
+  width: 100%;
+  }
+
+  .content button:hover{
+    background-color: #F0EAD6;
+    color: black;
+    width: 100%;
+  }
+
+  .banner{
+    display: block;
+  }
+
+  .banner .card{
+    width: 90%;
+  }
+  .banner h1{
+    font-size: 2vh;
+  }
 }

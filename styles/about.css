@@ -5,12 +5,103 @@
 .upper-content .left{
     padding: 5%;
     width: 50%;
-    font-size: 1.5em;
+    font-size: 1.7vw;
     text-align: justify;
     
+}
+
+.upper-content img{
+    width: 80%;
 }
 
 .upper-content .right{
     padding: 5%;
     width: 50%;
 }
+
+.lower-content{
+    padding: 1.5%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+}
+
+.card{
+    width: 30%;
+}
+
+.card h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+
+.card > div{
+    font-size: 1vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.card img{
+    width: 70%;
+}
+
+
+@media screen and (max-width: 700px) {
+    .upper-content{
+      display: block;
+      font-size: 2vh;
+      padding: 1%;
+      text-align: justify;
+    }
+
+    .upper-content .left{
+        width: 90%;
+    }
+
+    .upper-content .left h1{
+        font-size: 5vh;
+    }
+
+    .upper-content .left div{
+        font-size: 2vh;
+    }
+
+    .upper-content .right{
+        width: 90%;
+    }
+
+    .upper-content .right img{
+        width: 100%;
+    }
+
+    .lower-content{
+        display: block;
+    }
+
+    .lower-content .card{
+        width: 100%;
+    }
+
+    .lower-content .card img{
+        width: 100%;
+    }
+
+    .lower-content .card h2{
+        font-size: 5vh;
+    }
+
+    .lower-content .card DIV{
+        font-size: 2.5vh;
+        padding-bottom: 50px;
+    }
+
+    
+
+
+
+
+
+
+
+  }
